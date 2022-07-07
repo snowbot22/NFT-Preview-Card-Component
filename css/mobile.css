@@ -1,0 +1,221 @@
+/*
+*ABSTRACT
+*/
+/*
+*FLEX
+*/
+.card__div--2, .card__div--1 .card__div--1__time, .card__div--1 .card__div--1__price, .card__div--1 {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+/* 
+*GRID
+*/
+.figure--hide {
+  display: grid;
+  place-content: center;
+}
+
+/*
+*LINE
+*/
+.card__div--2 {
+  border-top: 1px solid hsl(215deg, 32%, 27%);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/*
+*COMPONENTS
+*/
+.img--large-rounded {
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+}
+
+.img--large {
+  width: 100%;
+  height: 100%;
+}
+
+.img--small {
+  width: 10%;
+  height: 10%;
+}
+
+/*
+* FIGURE ANIMATION HOVER
+*/
+.card__figure > .figure--hide {
+  opacity: 0;
+}
+
+.card__figure:hover > .figure--hide {
+  opacity: 0.7;
+}
+
+/*
+*TYPO ANIMATION HOVER
+*/
+.creator--name:hover {
+  color: hsl(178deg, 100%, 50%);
+}
+
+.card__title:hover {
+  color: hsl(178deg, 100%, 50%);
+}
+
+/*
+*GRID MAIN 
+*/
+main {
+  display: grid;
+  grid-template-columns: repeat(4, 25vw);
+  grid-template-rows: repeat(2, 50vh);
+  background-color: hsl(217deg, 54%, 11%);
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+/*
+*CARD
+*/
+.card {
+  background-color: hsl(216deg, 50%, 16%);
+  grid-row: 1/3;
+  grid-column: 1/5;
+  width: 90%;
+  height: max-content;
+  place-self: center;
+  padding: 2rem;
+  border-radius: 5%;
+}
+.card__figure {
+  width: 100%;
+  height: 40%;
+  border-radius: 5%;
+  position: relative;
+}
+
+.figure--hide {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsl(178deg, 100%, 50%);
+  border-radius: 5%;
+  opacity: 0.7;
+}
+
+/*
+*TYPOGRAPHY
+*/
+.card__title {
+  font-size: 2rem;
+  color: hsl(0deg, 0%, 100%);
+  padding-top: 2rem;
+  padding-bottom: 0;
+  font-family: "Outfit", sans-serif;
+  font-weight: bolder;
+}
+
+.card__review {
+  font-size: 1.8rem;
+  color: hsl(215deg, 51%, 70%);
+  padding-top: 1.8rem;
+  padding-bottom: 0;
+  font-family: "Outfit", sans-serif;
+  font-weight: light;
+}
+
+.card__div--1__price {
+  font-size: 1.8rem;
+  color: hsl(178deg, 100%, 50%);
+  padding-top: 0;
+  padding-bottom: 0;
+  font-family: "Outfit", sans-serif;
+  font-weight: bolder;
+}
+
+.card__div--1__time {
+  font-size: 1.8rem;
+  color: hsl(215deg, 51%, 70%);
+  padding-top: 0;
+  padding-bottom: 0;
+  font-family: "Outfit", sans-serif;
+  font-weight: bolder;
+}
+
+.card__div--1__time {
+  font-size: 1.8rem;
+  color: hsl(215deg, 51%, 70%);
+  padding-top: 0;
+  padding-bottom: 0;
+  font-family: "Outfit", sans-serif;
+  font-weight: bolder;
+}
+
+.card__div--2__review {
+  font-size: 1.8rem;
+  color: hsl(215deg, 51%, 70%);
+  padding-top: 0;
+  padding-bottom: 0;
+  font-family: "Outfit", sans-serif;
+  font-weight: bolder;
+}
+
+.creator--name {
+  color: hsl(0deg, 0%, 100%);
+}
+
+/*
+*DIV CONTAINERS
+*/
+.card__div--1 {
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.8rem;
+  padding-bottom: 1.8rem;
+}
+.card__div--1 .card__div--1__price {
+  align-items: center;
+  gap: 0.5rem;
+}
+.card__div--1 .card__div--1__time {
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.card__div--2 {
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+/*
+*HEIGHT MEDIA QUERY
+*/
+@media screen and (max-height: 625px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(4, 25vw);
+    grid-template-rows: repeat(2, max-content);
+    background-color: hsl(217deg, 54%, 11%);
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+  }
+}
+
+/*# sourceMappingURL=mobile.css.map */

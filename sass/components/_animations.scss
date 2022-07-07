@@ -1,0 +1,20 @@
+/*
+* FIGURE ANIMATION HOVER
+*/
+.card__figure > .figure--hide{
+    opacity: 0;
+}
+.card__figure:hover > .figure--hide{
+    opacity: 0.7;
+}
+
+/*
+*TYPO ANIMATION HOVER
+*/
+.creator--name:hover{
+    color: color(Cyan);
+}
+
+.card__title:hover{
+    color: color(Cyan);
+}

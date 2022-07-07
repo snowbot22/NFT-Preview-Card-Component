@@ -1,0 +1,10 @@
+@mixin typo($name,$size,$color,$pt,$pb,$weight) {
+    .card__#{$name}{
+        font-size: $size;
+        color: color($color);
+        padding-top: ($pt);
+        padding-bottom: ($pb);
+        font-family: 'Outfit', sans-serif;
+        font-weight: $weight;
+    }
+}
